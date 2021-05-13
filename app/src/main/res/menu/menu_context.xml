@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/aboutContextMenuItem"
+          android:title="Детальная информация" />
+    <item android:id="@+id/addScheduleContextMenuItem"
+          android:title="Добавить расписание" />
+    <item android:id="@+id/addConditionContextMenuItem"
+          android:title="Добавить условие" />
+    <item android:id="@+id/editNameContextMenuItem"
+          android:title="Изменить имя" />
+    <item android:id="@+id/deleteContextMenuItem"
+          android:title="Удалить" />
+</menu>

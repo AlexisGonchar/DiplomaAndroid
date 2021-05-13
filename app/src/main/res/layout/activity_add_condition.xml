@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddConditionActivity" android:orientation="vertical">
+
+    <Switch
+            android:text="Учитывать температуру"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/switchTemperatureAccounting" android:textSize="24sp"
+            android:checked="true"/>
+    <TextView
+            android:text="Температура (°C)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textViewTemperatureCondition" android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+    <TextView
+            android:text="Не меньше -50°C и не больше 100°C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textViewTemperatureInfoCondition"
+            android:textColor="@android:color/black"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:ems="10"
+            android:id="@+id/editTextTemperatureCondition"/>
+    <Switch
+            android:text="Учитывать влажность"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/switchHumidityAccounting" android:textSize="24sp"
+            android:checked="true"/>
+    <TextView
+            android:text="Влажность (%)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textViewHumidityCondition" android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+    <TextView
+            android:text="Не меньше 0% и не больше 100%"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textViewHumidityInfoCondition"
+            android:textColor="@android:color/black"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextHumidityCondition"/>
+    <Switch
+            android:text="Действие"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/switchActionCondition"  android:textSize="24sp"/>
+    <Button
+            android:text="Установить условие"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/buttonSendConditionData"/>
+</LinearLayout>

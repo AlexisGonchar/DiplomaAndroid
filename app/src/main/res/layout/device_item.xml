@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <TableRow
+            android:layout_width="600dp"
+            android:layout_height="match_parent" android:layout_weight="1" android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:text="Имя"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textViewItemNameDevice"
+                    android:layout_weight="1"
+                    android:textSize="30sp" android:textColor="@android:color/black"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView
+                        android:text="В сети"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textViewItemOnline"
+                        android:layout_weight="1"/>
+                <TextView
+                        android:text="23,4°C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textViewItemTemperature"
+                        android:layout_weight="1"/>
+                <TextView
+                        android:text="💧55%"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textViewItemHumidity"
+                        android:layout_weight="1" android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1" android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp">
+        <ToggleButton
+                android:text="ToggleButton"
+                android:background="@drawable/toggle_selector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/toggleButtonItemSwitchStatusDevice"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp"
+                android:layout_margin="4dp" android:layout_marginLeft="4dp"/>
+    </TableRow>
+</LinearLayout>
